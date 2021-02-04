@@ -89,7 +89,8 @@ def loadImageB64(url):
 
 def makeSVG(data):
     barCount = 84
-    contentBar = "".join(["<div class='bar'></div>" for i in range(barCount)])
+#     contentBar = "".join(["<div class='bar'></div>" for i in range(barCount)])
+    contentBar = ""
     barCSS = barGen(barCount)
 
     if data == {} or data["item"] == "None":
