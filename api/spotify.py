@@ -91,7 +91,7 @@ def makeSVG(data):
     barCount = 84
 #     contentBar = "".join(["<div class='bar'></div>" for i in range(barCount)])
     contentBar = ""
-#     barCSS = barGen(barCount)
+    barCSS = barGen(barCount)
 
     if data == {} or data["item"] == "None":
         # contentBar = "" #Shows/Hides the EQ bar if no song is currently playing
