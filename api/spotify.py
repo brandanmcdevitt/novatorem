@@ -88,9 +88,9 @@ def loadImageB64(url):
 
 
 def makeSVG(data):
-    barCount = 84
-    contentBar = "".join(["<div class='bar'></div>" for i in range(barCount)])
-#     contentBar = ""
+    barCount = 40
+#     contentBar = "".join(["<div class='bar'></div>" for i in range(barCount)])
+    contentBar = ""
     barCSS = barGen(barCount)
 
     if data == {} or data["item"] == "None":
@@ -116,7 +116,7 @@ def makeSVG(data):
         "status": currentStatus,
     }
 
-    return render_template("spotify.html.j2", **dataDict)
+    return render_template("spotify-minimal.html.j2", **dataDict)
 
 
 @app.route("/", defaults={"path": ""})
